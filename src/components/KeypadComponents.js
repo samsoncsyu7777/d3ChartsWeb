@@ -51,6 +51,7 @@ export const MyKeypad = ({ handleClick, topicIndex, formulaFocusedIndex }) => {
           keypadTexts.map((key, index) => {
             if (index < 5) {
               return <Button
+                key={index}
                 className={classes.keypadKey}
                 value={key}
                 variant="contained"                
@@ -69,6 +70,7 @@ export const MyKeypad = ({ handleClick, topicIndex, formulaFocusedIndex }) => {
           keypadTexts.map((key, index) => {
             if (index > 4) {
               return <Button
+                key={index}
                 className={classes.keypadKey}
                 value={key}
                 variant="contained"                

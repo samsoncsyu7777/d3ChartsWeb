@@ -565,6 +565,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
             {
               quotientArray.map((quotient, index) => {
                 return <MyInput
+                  key={index}
                   value={quotient}
                   colorStage={
                     index > quotientFocusedIndex || index < quotientStartIndex ? "invisible"
@@ -583,6 +584,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
             {
               divisorArray.map((divisor, index) => {
                 return <MyInput
+                  key={index}
                   value={divisor}
                   colorStage={
                     inputTypeIndex == 1 && divisorFocusedIndex == index ? "focused"
@@ -598,6 +600,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
                 {
                   dividendArray[0].map((dividend, index) => {
                     return <MyInput
+                      key={index}
                       value={dividend}
                       colorStage={
                         inputTypeIndex == 0 && dividendLineFocusedIndex == 0 && dividendPositionFocusedIndex == index ? "focused"
@@ -617,6 +620,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
                       {
                         productLine.map((product, positionIndex) => {
                           return <MyInput
+                            key={positionIndex}
                             value={product}
                             superValue={productCarryArray[lineIndex][positionIndex]}
                             colorStage={
@@ -638,6 +642,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
                       {
                         dividendArray.length > lineIndex + 1 && dividendArray[lineIndex + 1].map((dividend, positionIndex) => {
                           return <MyInput
+                            key={positionIndex}
                             value={dividend}
                             colorStage={
                               positionIndex < dividendStartIndexArray[lineIndex + 1] || positionIndex > dividendEndIndexArray[lineIndex + 1] ? "invisible"

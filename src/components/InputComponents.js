@@ -103,6 +103,7 @@ export const HorizontalLine = ({ lengthArray }) => {
       {
         lengthArray.map((item, index) => {
           return <Box
+            key={index}
             borderBottom={3}
             className={classes.oneDigitLength}
           />
