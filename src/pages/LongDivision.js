@@ -615,7 +615,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
               </Grid>
               {
                 productArray.map((productLine, lineIndex) => {
-                  return <>
+                  return <Grid key={lineIndex}>
                     <Grid>
                       {
                         productLine.map((product, positionIndex) => {
@@ -656,7 +656,7 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
                         })
                       }
                     </Grid>
-                  </>
+                  </Grid>
                 })
               }
             </Grid>
