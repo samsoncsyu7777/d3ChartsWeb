@@ -47,7 +47,7 @@ const headingSelectStyles = makeStyles((theme) => ({
 }));
 
 export const HeadingSelect = ({ selectLabel, selectIndex, setItemIndex, itemsArray }) => {
-  const handleSelect = (event, setItemIndex) => {
+  const handleSelect = (event) => {
     setItemIndex(event.target.value);
   };
 
@@ -65,7 +65,7 @@ export const HeadingSelect = ({ selectLabel, selectIndex, setItemIndex, itemsArr
           },
         }}
         value={selectIndex}
-        onChange={e => { handleSelect(e, setItemIndex) }}
+        onChange={handleSelect}
       >
         {
           itemsArray.map((language, index) => {

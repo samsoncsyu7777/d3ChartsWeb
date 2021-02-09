@@ -37,14 +37,14 @@ export const LongDivision = ({ languageIndex, topic, learningTool, topicIndex, l
   const [dividendEndIndexArray, setDividendEndIndexArray] = useState([topicIndex + 1]);
   const [dividendHighlighted, setDividendHighlighted] = useState(false);
   const [dividendValue, setDividendValue] = useState(0);
-  const [productArray, setProductArray] = useState([]);
+  const [productArray, setProductArray] = useState([[]]);
   const [productLineFocusedIndex, setProductLineFocusedIndex] = useState(-1);
   const [productPositionFocusedIndex, setProductPositionFocusedIndex] = useState(0);
   const [productStartIndexArray, setProductStartIndexArray] = useState([]);
   const [productEndIndexArray, setProductEndIndexArray] = useState([]);
   const [productHighlighted, setProductHighlighted] = useState(false);
   const [productValue, setProductValue] = useState(0);
-  const [productCarryArray, setProductCarryArray] = useState([]);
+  const [productCarryArray, setProductCarryArray] = useState([[]]);
   const timeDelay = 200;
   const timeDelayLarge = 1500;
 
