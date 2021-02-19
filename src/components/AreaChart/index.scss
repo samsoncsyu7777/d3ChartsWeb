@@ -1,0 +1,10 @@
+.area-chart {
+  &__stroke {
+    stroke: #0077bb;
+  }
+  &__circle {
+    fill: #0077bb;
+    stroke-width: 3;
+    stroke: #ffffff;
+  }
+}

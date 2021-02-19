@@ -1,0 +1,15 @@
+.base {
+  &__container {
+    position: relative;
+    width: fit-content;
+    margin: 20px;
+  }
+  &__axis {
+    color: #777777;
+    stroke-width: 0.3;
+    &-label {
+      stroke: #000000;
+      font-size: 12px;
+    }
+  }
+}
